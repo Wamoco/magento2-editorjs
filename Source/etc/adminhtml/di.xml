@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Cms\Model\Config\Source\Wysiwyg\Editor">
+        <arguments>
+            <argument name="adapterOptions" xsi:type="array">
+                <item name="editorjs" xsi:type="array">
+                    <item name="value" xsi:type="string">Wamoco_EditorJS/js/editorAdapter</item>
+                    <item name="label" xsi:type="string" translatable="true">editorjs</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Cms\Model\Wysiwyg\CompositeConfigProvider">
+        <arguments>
+            <argument name="wysiwygConfigPostProcessor" xsi:type="array">
+                <item name="Wamoco_EditorJS/js/editorAdapter" xsi:type="string">Wamoco\EditorJS\Model\Config\EditorJS\Config</item>
+            </argument>
+            <!-- <argument name="variablePluginConfigProvider" xsi:type="array"> -->
+            <!--     <item name="Magento_Tinymce3/tinymce3Adapter" xsi:type="string">Magento\Tinymce3\Model\Config\Variable\Config</item> -->
+            <!-- </argument> -->
+            <!-- <argument name="widgetPluginConfigProvider" xsi:type="array"> -->
+            <!--     <item name="Magento_Tinymce3/tinymce3Adapter" xsi:type="string">Magento\Tinymce3\Model\Config\Widget\Config</item> -->
+            <!-- </argument> -->
+            <!-- <argument name="galleryConfigProvider" xsi:type="array"> -->
+            <!--     <item name="Magento_Tinymce3/tinymce3Adapter" xsi:type="string">Magento\Tinymce3\Model\Config\Gallery\Config</item> -->
+            <!-- </argument> -->
+        </arguments>
+    </type>
+    <type name="Magento\Ui\Block\Wysiwyg\ActiveEditor">
+        <plugin name="editor-js-set-editor" type="Wamoco\EditorJS\Plugin\Ui\Block\Wysiwyg\ActiveEditor" sortOrder="10" />
+    </type>
+
+</config>

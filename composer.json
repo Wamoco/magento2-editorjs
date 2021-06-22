@@ -1,0 +1,14 @@
+{
+    "name": "wamoco/magento2-editorjs",
+    "description": "EditorJS Integration for Magento 2",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "Source/registration.php"
+        ],
+        "psr-4": {
+            "Wamoco\\EditorJS\\": "Source/"
+        }
+    }
+}

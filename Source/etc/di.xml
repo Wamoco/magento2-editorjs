@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Ui\Block\Wysiwyg\ActiveEditor">
+        <arguments>
+            <argument name="availableAdapterPaths" xsi:type="array">
+                <item name="Wamoco_EditorJS/js/editorAdapter" xsi:type="string"/>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Cms\Block\Page">
+        <plugin name="renderPage" type="Wamoco\EditorJS\Plugin\Cms\Block\Page" sortOrder="10" />
+    </type>
+    <type name="Wamoco\EditorJS\Block\Renderer\Renderer">
+        <arguments>
+            <argument name="renderer" xsi:type="array">
+                <item name="delimiter" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\Delimiter</item>
+                <item name="header" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\Header</item>
+                <item name="list" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\HtmlList</item>
+                <item name="image" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\Image</item>
+                <item name="paragraph" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\Paragraph</item>
+                <item name="raw" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\RawHtml</item>
+                <item name="magentoWidget" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\Widget</item>
+                <item name="twoColumns" xsi:type="object">Wamoco\EditorJS\Block\Renderer\Blocks\TwoColumns</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

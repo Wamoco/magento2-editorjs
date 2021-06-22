@@ -1,0 +1,24 @@
+.ce-block__content {
+  background-color: #FCFCFC;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border: 1px solid #c2c2d6;
+}
+.image-tool .image-tool__edit-mode {
+  display: none !important;
+}
+
+.image-tool--edit .image-tool__edit-mode {
+  display: block !important;
+}
+.cdx-input {
+  background-color: white;
+  padding: 8px;
+}
+.ce-toolbar__content {
+  max-width: 700px;
+}
+.ce-block__content {
+  max-width: 700px;
+}
+

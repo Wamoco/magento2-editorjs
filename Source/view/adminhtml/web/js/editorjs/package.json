@@ -1,0 +1,28 @@
+{
+  "name": "editorjs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@editorjs/delimiter": "^1.2.0",
+    "editorjs-hyperlink": "^1.0.6",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "@editorjs/carousel": "github:mr8bit/carousel-editorjs#master",
+    "@editorjs/editorjs": "2.19.3",
+    "@editorjs/header": "^2.6.1",
+    "@editorjs/list": "^1.6.2",
+    "@editorjs/quote": "^2.4.0",
+    "editorjs-layout": "^1.2.2",
+    "install": "^0.13.0"
+  }
+}

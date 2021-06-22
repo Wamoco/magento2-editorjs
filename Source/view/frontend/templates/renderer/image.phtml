@@ -1,0 +1,7 @@
+<?php if ($block->hasLink()): ?>
+<a href="<?= $block->getLink() ?>">
+<?php endif; ?>
+    <img src="<?= $block->getImageUrl() ?>" <?= $block->isStretched() ? "style='width:100%'" : "" ?>>
+<?php if ($block->hasLink()): ?>
+</a>
+<?php endif; ?>
