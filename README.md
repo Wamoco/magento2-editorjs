@@ -8,9 +8,9 @@ This module replaces the wysiwyg editor for cms pages with [EditorJS](https://ed
 
 Please note: the module is not yet publicly available on packagist. Repositories have to be added manually.
 
-    composer config repositories.wamoco-editorjs vcs git@github.com:Wamoco/magento-editorjs.git
+    composer config repositories.wamoco-editorjs vcs git@github.com:Wamoco/magento2-editorjs.git
 
-    composer require wamoco/editorjs
+    composer require wamoco/magento2-editorjs
     bin/magento module:enable Wamoco_EditorJS
     bin/magento setup:upgrade
 
